@@ -43,7 +43,7 @@ html, body {
 }
 
 .header-logo img {
-  height: 32px;
+  height: 49px;
 }
 
 .header-search-bar {
@@ -100,7 +100,7 @@ main {
 .footer {
   background-color: #1e2530;
   color: white;
-  padding: 40px 20px 20px;
+  padding: 3px 20px 3px;
   font-family: Arial, sans-serif;
 }
 
@@ -158,4 +158,9 @@ main {
   color: orange;
   text-decoration: none;
   margin: 0 5px;
+}
+
+svg{
+  height: 35px;
+  padding: 5px;
 }
