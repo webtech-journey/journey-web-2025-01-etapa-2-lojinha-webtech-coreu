@@ -1,9 +1,11 @@
-const carousel = document.querySelector(".carousel");
 const carouselInner = document.querySelector(".carousel-inner");
 const carouselItems = document.querySelectorAll(".carousel-item");
 const prevButton = document.querySelector(".carousel-prev");
 const nextButton = document.querySelector(".carousel-next");
-
+const markerSliders = document.querySelector(".sliders-markers");
+const markers = markerSliders.querySelectorAll("div");
+const colorMarker = "#FEC00A";
+const colorWhite = "ffffff";
 let currentSlide = 0;
 
 function goToSlide(index) {
@@ -18,10 +20,23 @@ function nextSlide() {
 function prevSlide() {
   goToSlide((currentSlide - 1 + carouselItems.length) % carouselItems.length);
 }
+function setMarkers(markers) {
+    markers.forEach((element,index) => {
+        element.addEventListener("click",()=>{
+            goToSlide(index)
+            element.style.backgroundColor=colorMarker;
+            markers.forEach(e => {
+                if (e!= element) {
+                    e.style.backgroundColor=colorWhite;
+                }
+                
+            });
+        })
+    });
+}
 
 prevButton.addEventListener("click", prevSlide);
 nextButton.addEventListener("click", nextSlide);
 
-
-// Automatizar a troca de slides
-setInterval(nextSlide, 5000); // Troca de slide a cada 5 segundos
+setInterval(nextSlide, 10000); 
+setMarkers(markers);
