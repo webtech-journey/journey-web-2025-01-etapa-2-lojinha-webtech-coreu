@@ -6,21 +6,32 @@
   <title>WebTechStore</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header class="header">
-    <div class="header-left-group">
-      <div class="header-menu-icon">&#9776;</div>
-      <div class="header-logo">
-        <a href="index.html">
-          <img src="/assets/img/logo.png" alt="WebTechStore">
-        </a>
+      <div class="header-left-group">
+        <div class="header-menu-icon">
+          <div class="menu-icon"> &#9776;</div>
+          <div class="dropdown-menu">
+            <div class="dropdown-category">
+              <a id="categoria" href="/paginas/pesquisa/pesquisa.html">Categoria</a>
+              <a id="categoria" href="/paginas/pesquisa/pesquisa.html">Categoria</a>
+              <a id="categoria" href="/paginas/pesquisa/pesquisa.html">Categoria</a>
+              <a id="categoria" href="/paginas/pesquisa/pesquisa.html">Categoria</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-logo">
+          <a href="/paginas/home/index.html">
+            <img src="/assets/img/logo.png" alt="WebTechStore" />
+          </a>
+        </div>
       </div>
-    </div>
   
     <div class="header-search-bar">
       <input type="text" placeholder="Pesquisar...">
-      <button><span>&#128269;</span></button>
+      <button><a href="/paginas/pesquisa/pesquisa.html"> <span><i class="fa fa-search"></i></span></a></button>
     </div>
   
     <nav class="header-nav-links">
