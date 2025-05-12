@@ -53,6 +53,7 @@ html, body {
 }
 
 .menu-icon {
+    margin-top: 5px;
     color: white;
     font-size: 28px;
 }
@@ -68,6 +69,7 @@ html, body {
     color: white;
     z-index: 999;
     padding: 15px;
+    margin-left: -20px;
 }
 
 .header-menu-icon:hover .dropdown-menu {
@@ -97,19 +99,7 @@ html, body {
     background-color: #2c3440;
 }
 
-.dropdown-submenu {
-    display: none;
-    position: absolute;
-    left: 200px; 
-    top: 0;
-    background: #2e3440;
-    padding: 10px;
-    white-space: nowrap;
-    z-index: 1000;
-    min-width: 180px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-}
+
 
 .menu-item p {
     color: white;
@@ -193,7 +183,7 @@ html, body {
     font-weight: bold;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 39px;
     text-align: center;
     text-transform: capitalize;
@@ -360,10 +350,8 @@ ul {
 
     color: #000000;
 }
-.sidebar-star{
-    width: 16px;
-    height: 16px;
-    font-size: 16px;
+.checked {
+  color: orange;
 }
 .text-above{
     font-family: 'Jost';
