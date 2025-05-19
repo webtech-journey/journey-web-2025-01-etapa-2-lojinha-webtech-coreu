@@ -1,0 +1,76 @@
+<style>
+    .product-gallery {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.thumbnail {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.thumbnail.active {
+  border: 2px solid #ffb700;
+}
+
+.thumbnail-more {
+  width: 48px;
+  height: 48px;
+  background-color: #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.main-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
+</style>
+
+<div class="product-gallery">
+  <div class="thumbnail-list">
+    <img src="assets/img/capsula1.png" alt="Variante 1" class="thumbnail active" onclick="changeImage('assets/img/capsula1.png')">
+    <img src="assets/img/capsula2.png" alt="Variante 2" class="thumbnail" onclick="changeImage('assets/img/capsula2.png')">
+    <img src="assets/img/capsula3.png" alt="Variante 3" class="thumbnail" onclick="changeImage('assets/img/capsula3.png')">
+    <img src="assets/img/capsula4.png" alt="Variante 4" class="thumbnail" onclick="changeImage('assets/img/capsula4.png')">
+    <div class="thumbnail-more">+2</div>
+  </div>
+
+  <div class="main-image">
+    <img id="mainProductImage" src="assets/img/cafeteira.png" alt="Imagem principal do produto">
+  </div>
+</div>
+
+<script>
+  function changeImage(src) {
+    const mainImage = document.getElementById('mainProductImage');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+
+    mainImage.src = src;
+
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+    const selected = Array.from(thumbnails).find(img => img.src.includes(src));
+    if (selected) selected.classList.add('active');
+  }
+</script>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Simplificado</title>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      font-family: sans-serif;
+    }
+    .dropdown-btn {
+      padding: 8px 16px;
+      border: 2px solid #005f99;
+      border-radius: 8px;
+      background: #f5f5f5;
+      cursor: pointer;
+      min-width: 120px;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      max-height: 150px;
+      overflow-y: auto;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+    .dropdown-item {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .dropdown-item:hover {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dropdown">
+  <div class="dropdown-btn">Quantidade: 1</div>
+  <div class="dropdown-menu">
+    <div class="dropdown-item" data-value="1">1</div>
+    <div class="dropdown-item" data-value="2">2</div>
+    <div class="dropdown-item" data-value="3">3</div>
+    <div class="dropdown-item" data-value="4">4</div>
+    <div class="dropdown-item" data-value="5">5</div>
+  </div>
+</div>
+
+<script>
+  const dropdown = document.querySelector('.dropdown');
+  const btn = dropdown.querySelector('.dropdown-btn');
+  const menu = dropdown.querySelector('.dropdown-menu');
+  
+  btn.addEventListener('click', () => menu.style.display = menu.style.display === 'block' ? 'none' : 'block');
+  
+  dropdown.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', () => {
+      btn.textContent = `Quantidade: ${item.dataset.value}`;
+      menu.style.display = 'none';
+    });
+  });
+  
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.dropdown')) menu.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
