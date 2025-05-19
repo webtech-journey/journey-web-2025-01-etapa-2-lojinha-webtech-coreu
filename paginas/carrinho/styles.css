@@ -181,6 +181,7 @@ body {
 /* Layout principal */
 .main-cart-wrapper {
   display: flex;
+  margin: auto;
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 2rem;
@@ -304,8 +305,10 @@ body {
 
 .main-suggestions-list {
   display: flex;
+  margin: auto;
+  justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .main-suggestion-item {
