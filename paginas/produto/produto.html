@@ -15,6 +15,7 @@
         crossorigin="anonymous"></script>
     <!-- Conexão com página de css -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/card.css">
     <!-- Conexão com o js -->
     <script src="assets/scripts/app.js" defer></script>
     
@@ -116,7 +117,7 @@
 
                                         <!-- Aqui é onde a opção "Mais de 6 unidades" será substituída -->
                                         <div id="mais-de-6-wrapper">
-                                            <div class="dropdown-item" id="opcao-mais-6" onclick="mostrarInputPersonalizado()">Mais de 6 unidades</div>
+                                            <div class="dropdown-item" id="opcao-mais-6" onclick="mostrarInputPersonalizado()">Mais de 6</div>
 
                                             <div class="custom-input hidden" id="input-personalizado">
                                                 <label for="quantidade">Quantidade:</label>
@@ -142,9 +143,169 @@
             <h2 class="titulo">Produtos relacionados</h2>
 
             <div class="conteudo-relacionados">
-
-                <!-- carousel com os produtos relacionados -->
-
+                
+                <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-around">
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product-img">
+                                        <img  src="/assets/img/cafeteira.png" alt="imagem do produto">
+                                        <button class="card-product-button-addCart " type="button">
+                                        <img src="/assets/img/add-to-cart.png" alt="adicionar ao carrinho">
+                                        </button>
+                                    </div>
+                                    <p class="card-product-title">Cafeteria Eletrolux</p>
+                                    <div class="card-product-rating">
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <div></div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="card-price">
+                                        <p>🪙100.00</p>
+                                    </div>
+                                    <button class="card-product-verMais" type="button">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -158,34 +319,49 @@
                         <p class="total"></p>
                         <p class="qty-reviews">⭐⭐⭐⭐⭐<br>10 avaliações</p>
                     </div>
-                    
+                    <div class="barra-avaliacoes">
+                        <div>5 estrelas <div class="barra"><div class="preenchido" style="width: 100%;"></div></div> 100%</div>
+                        <div>4 estrelas <div class="barra"><div class="preenchido" style="width: 0%;"></div></div> 0%</div>
+                        <div>3 estrelas <div class="barra"><div class="preenchido" style="width: 0%;"></div></div> 0%</div>
+                        <div>2 estrelas <div class="barra"><div class="preenchido" style="width: 0%;"></div></div> 0%</div>
+                        <div>1 estrela  <div class="barra"><div class="preenchido" style="width: 0%;"></div></div> 0%</div>
+                    </div>
 
                 </div>
                 <div class="dir">
                     <div clas="avaliacoes-imagens">
                         <h3 class="subtitulo">Avaliações com imagens</h3>
-                        <!-- imagens dos clientes -->
+                        <div class="imagens">
+                            <img src="img1.jpg" alt="Avaliação 1">
+                            <img src="img2.jpg" alt="Avaliação 2">
+                            <img src="img3.jpg" alt="Avaliação 3">
+                            <img src="img4.jpg" alt="Avaliação 4">
+                        </div>
                     </div>
                     <div class="avaliacoes-destaque">
                         <h3 class="subtitulo">Avaliações em destaque</h3>
                         <p class="qty-comments">6 comentários</p>
-                        <div class="">
-                            <label for="Sorting" class="form-label">Ordenar:</label>
-                            <select class="form-select" id="Sorting">
-                                <option value="mais-uteis">Mais úteis</option>
-                                <option value="mais-recentes">Mais recentes</option>
-                                
-                            </select>
+                        <div class="classific">
+                            <div class="sort">
+                                <label for="Sorting" class="form-label">Ordenar:</label>
+                                <select class="form-select" id="Sorting">
+                                    <option value="mais-uteis">Mais úteis</option>
+                                    <option value="mais-recentes">Mais recentes</option>
+                                    
+                                </select>
+                            </div>
 
-                            <label for="Stars" class="form-label">Estrelas:</label>
-                            <select class="form-select" id="Stars">
-                                <option value="all">Todos</option>
-                                <option value="5">5 estrelas</option>
-                                <option value="4">4 estrelas</option>
-                                <option value="3">3 estrelas</option>
-                                <option value="2">2 estrelas</option>
-                                <option value="1">1 estrela</option>
-                            </select>
+                            <div class="star">
+                                <label for="Stars" class="form-label">Estrelas:</label>
+                                <select class="form-select" id="Stars">
+                                    <option value="all">Todos</option>
+                                    <option value="5">5 estrelas</option>
+                                    <option value="4">4 estrelas</option>
+                                    <option value="3">3 estrelas</option>
+                                    <option value="2">2 estrelas</option>
+                                    <option value="1">1 estrela</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="comments">
 
