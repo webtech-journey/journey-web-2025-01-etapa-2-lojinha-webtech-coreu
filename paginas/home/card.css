@@ -50,11 +50,6 @@
     width: 25px;
     height: 25px;
   }
-  .card-product-button-addCart:hover{
-    width: 300px;
-    color: #2A3341;
-    background-image: url("add-to-cart-white.png");
-  }
 
 
   .card-product-rating{
