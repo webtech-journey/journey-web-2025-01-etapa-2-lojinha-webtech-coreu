@@ -4,13 +4,11 @@
 
 .card-product{
     position: relative;
-    z-index: 2;
     border-radius: 10px;
     padding: 15px;
     background-color: #ffffff;
-    width: 220px;
-    height: 300px;
-    transition: height 0.1s ease-in-out;
+    width: 200px;
+    height: 280px;
   }
   .card-product:hover{
     height: 340px; 
@@ -53,11 +51,6 @@
     width: 25px;
     height: 25px;
   }
-  .card-product-button-addCart:hover{
-    width: 300px;
-    color: #2A3341;
-    background-image: url("add-to-cart-white.png");
-  }
 
 
   .card-product-rating{
@@ -89,7 +82,7 @@
     min-width: max-content;
     color: #ffffff;
     height: 35px;
-    width: 210px;
+    width: 180px;
     border: 0;
     border-radius: 5px;
     background-color: #2A3341;
