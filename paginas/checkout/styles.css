@@ -204,6 +204,7 @@ main {
 .main-content{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    height: auto;
     margin: 0 auto;
     gap: 30px;
 }
@@ -247,7 +248,7 @@ input{
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    max-height: 400px;
+    height: 400px;
 }
 .informacoes p{
     margin: 15px 0;
@@ -370,9 +371,21 @@ ul {
 }
 
 
-@media (max-width: 768px) {
-    .produtos-grid {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 868px) {
+    .main-content{
+    grid-template-columns: 1fr;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+ .inputs {
+        grid-template-columns: 1fr; /* inputs em uma coluna só */
+    }
+
+    .informacoes {
+        height: auto; /* remover altura fixa */
+        margin-top: 20px;
     }
 }
 
