@@ -563,6 +563,8 @@ section#produtos-relacionados {
     padding-right: 63px;
 }
 
+/* ----------------- ESTILO DA SEÇÃO AVALIAÇÃO DOS CLIENTES ----------------- */
+
 section#avaliacao-clientes {
     padding-top: 50px;
     padding-left: 63px;
@@ -571,16 +573,71 @@ section#avaliacao-clientes {
 
 
 section#avaliacao-clientes .conteudo-avaliacao{
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 45px;
+    gap: 70px;
     max-width: 1200px;
     width: 100%;
     align-items: stretch;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .total-reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .total-reviews .total {
+    font-size: 50px;
+    margin-bottom: -8px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .total-reviews .qty-reviews{
+    padding-top: 12px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .barra-avaliacoes > div{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .barra-avaliacoes .barra {
+    display: inline-block;
+    background: #e0e0e0;
+    width: 250px;
+    height: 30px;
+    margin: 0 8px;
+    vertical-align: middle;
+    border-radius: 10px;
+    border-color: #000000;
+    border: 2px solid;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .barra-avaliacoes .preenchido {
+    background: #ffc107;
+    height: 100%;
+    border-radius: 10px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .dir {
+    max-width: 710px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .imagens{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .imagens img{
+    height: 250px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .avaliacoes-destaque {
+    padding-top: 30px;
 }
 
 section#avaliacao-clientes .conteudo-avaliacao .avaliacoes-destaque .classific{
@@ -589,3 +646,18 @@ section#avaliacao-clientes .conteudo-avaliacao .avaliacoes-destaque .classific{
     gap: 20px;
 }
 
+section#avaliacao-clientes .conteudo-avaliacao .comment {
+    padding-top: 30px;
+    margin-bottom: -25px;
+}
+
+section#avaliacao-clientes .conteudo-avaliacao .comment .data {
+    margin-top: -10px;
+    font-size: 15px;
+    color:#494949
+}
+
+
+section#avaliacao-clientes .conteudo-avaliacao .more-reviews {
+    padding-top: 10px;
+}
