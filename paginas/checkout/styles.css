@@ -17,11 +17,8 @@ html, body {
   }
 .main-content {
     flex: 1;
-    display: flex;
-    flex-direction: column; /* Alterado para coluna */
     gap: 20px;
     padding: 20px;
-    background-color: #f5f5f5;
 }
 
 /* Adicione um contêiner para o conteúdo principal (sidebar + produtos) */
@@ -216,10 +213,41 @@ main {
     border-radius: 8px;
     padding: 20px;
 }
+
+.contato, .endereco{
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.1);
+}
+.inputs{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+label{
+    margin: 3px;
+    margin-bottom: 5px;
+}
+input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
 .informacoes{
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
+    max-height: 400px;
 }
 .informacoes p{
     margin: 15px 0;
@@ -265,6 +293,7 @@ main {
     color: #fff;
     
 }
+
 
 .footer {
     background-color: #1e2530;
