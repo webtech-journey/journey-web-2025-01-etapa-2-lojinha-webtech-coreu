@@ -233,6 +233,7 @@ main {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .produto img{
@@ -250,7 +251,7 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-button{
+.btn-finalizar{
     width: 100%;
     padding: 15px;
     font-size: 16px;
@@ -259,7 +260,7 @@ button{
     color: #fff;
     cursor: pointer;
 }
-button a{
+.btn-finalizar a{
     text-decoration: none;
     color: #fff;
     
