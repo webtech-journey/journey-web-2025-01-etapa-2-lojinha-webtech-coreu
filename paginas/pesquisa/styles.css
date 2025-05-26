@@ -178,21 +178,13 @@ html, body {
 }
 
 .header-nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 39px;
-    text-align: center;
-    text-transform: capitalize;
-
-    color: #FFFFFF;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .header-user-icon {
-    background-color: #d9d0ff;
+    background-color: #d9d9d9;
     color: #2a2a5c;
     border-radius: 50%;
     padding: 8px;

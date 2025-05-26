@@ -104,6 +104,8 @@ html, body {
     display: block;
 }
 
+
+
 .menu-item {
     position: relative;
     color: white;
@@ -150,7 +152,6 @@ html, body {
     outline: none;
     background-color: #dcdcdc;
 }
-
 .header-search-bar button {
     background-color: #dcdcdc;
     border: none;

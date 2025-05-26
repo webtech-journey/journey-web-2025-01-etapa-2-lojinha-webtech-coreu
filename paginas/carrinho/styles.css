@@ -12,6 +12,8 @@ body {
   
   .main-content {
     display: flexbox;
+    background-color: #d9d9d9;
+    /* iaqui */
   }
   
   .header {
