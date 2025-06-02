@@ -474,6 +474,19 @@ ul {
     text-align: center;
     transition: background-color 0.2s ease, transform 0.1s ease; /* Adicionada animação suave */
 }
+.botao-exibir-mais{
+    background-color: #2a2a5c;
+    color: #E0E0E0;
+    font-style: normal;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-weight: 400;
+    font-size: clamp(10px, 1vw, 12px);
+    line-height: 15px;
+    text-align: center;
+}
 
 .botao-visualizar {
     background-color: #E0E0E0;
