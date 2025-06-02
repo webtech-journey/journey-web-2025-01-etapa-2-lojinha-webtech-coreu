@@ -336,7 +336,7 @@ svg{
 .product-category{
   background-color: #2A3341;
   padding: 15px;
-  height: 320px;
+
 }
 .product-category h1{
   color: #ffffff;
@@ -347,6 +347,7 @@ svg{
   position: relative;
   display: flex;
   justify-content: space-around;
+  overflow-x: auto;
 }
 .category-item {
   display: flex;
@@ -496,3 +497,135 @@ svg{
   border: 0;
   border-radius: 5px;
 }
+
+/* Media queries mais detalhadas para melhor responsividade */
+@media (max-width: 1024px) {
+
+  .grid-products{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  
+  .header-search-bar {
+      width: 30%;
+  }
+  .sidebar {
+    display: block !important; /* Exibe a sidebar em telas médias */
+}
+}
+
+@media (max-width: 768px) {
+  .content-container {
+      flex-direction: column; /* Alterado para column apenas em telas pequenas */
+      flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    display: block !important; /* Exibe a sidebar em telas pequenas */
+      width: 100%;
+      max-width: 100%;
+      position: static; /* Remove sticky em telas pequenas */
+      margin-bottom: 20px;
+  }
+  
+  
+  
+  .header {
+      flex-wrap: wrap;
+  }
+  
+  .header-search-bar {
+      position: relative;
+      left: 0;
+      transform: none;
+      width: 100%;
+      order: 3;
+      margin-top: 10px;
+  }
+  
+  .header-nav-links {
+      margin-left: auto;
+  }
+  .sliders-markers div{
+    width: 40px;
+  }
+  .carousel {
+    height: 300px;
+  }
+  .product-category h1 {
+    font-size:x-large;
+    padding-left: 20px;
+  }
+  .category-item img{
+    width: 130px;
+  }
+  .category-item{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .grid-products{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    display: none !important; /* Oculta o sidebar em telas muito pequenas */
+}
+  .carousel-promotions{
+    display:none;
+  }
+  .cards-products h1{
+    font-size: larger;
+    padding-left: 20px;
+  }
+  .produto-card {
+      min-height: 280px; /* Altura mínima reduzida para telas pequenas */
+  }
+  .category-item img{
+    width: 100px;
+  }
+  .category-item{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .product-category h1 {
+    font-size:large;
+    padding-left: 0%
+  }
+  .header-nav-links a:not(:last-child) {
+      display: none;
+  }
+  .cards-products{
+    align-items: stretch;
+   
+  }
+  .grid-products{
+    justify-items: center;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .botao {
+      padding: 6px 10px; /* Botões menores em telas muito pequenas */
+      font-size: clamp(10px, 0.9vw, 12px);
+  }
+  .btn-seeMore{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Adicionado media query para telas muito largas */
+@media (min-width: 1400px) {
+  .sidebar {
+    display: block !important; /* Exibe a sidebar em telas grandes */
+}
+}
+
