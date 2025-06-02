@@ -20,14 +20,7 @@ html, body {
     flex-direction: column;
 }
 
-.main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(10px, 2vw, 20px);
-    padding: clamp(10px, 2vw, 20px);
-    background-color: #f5f5f5;
-}
+
 
 /* Contêiner para o conteúdo principal (sidebar + produtos) com design responsivo */
 .content-container {
@@ -154,7 +147,7 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    width: clamp(150px, 40%, 500px);
+    width: clamp(20vw, 40vw, 60vw);
 }
 
 .header-search-bar input {
@@ -276,6 +269,7 @@ ul {
 
 /* Estilos responsivos para o layout da página de pesquisa */
 .sidebar {
+    display: block;
     flex: 0 0 auto; /* Alterado para não crescer nem encolher */
     width: clamp(200px, 20%, 300px); /* Largura responsiva com limites */
     background-color: #ffffff;
@@ -524,6 +518,10 @@ ul {
     .header-search-bar {
         width: 30%;
     }
+    
+    .sidebar {
+        display: block !important; /* Exibe a sidebar em telas médias */
+    }
 }
 
 @media (max-width: 768px) {
@@ -533,6 +531,7 @@ ul {
     }
     
     .sidebar {
+        display: block !important; /* Exibe a sidebar em telas pequenas */
         width: 100%;
         max-width: 100%;
         position: static; /* Remove sticky em telas pequenas */
@@ -552,7 +551,7 @@ ul {
         position: relative;
         left: 0;
         transform: none;
-        width: 100%;
+        width: 90vw;
         order: 3;
         margin-top: 10px;
     }
@@ -563,8 +562,13 @@ ul {
 }
 
 @media (max-width: 576px) {
+    .sidebar {
+        display: none !important; /* Oculta o sidebar em telas muito pequenas */
+    }
+    
     .produtos-grid {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Ajustado para telas muito pequenas */
+        padding: clamp(10px, 2vw, 20px); /* Restaura o padding quando o sidebar está oculto */
     }
     
     .produto-card {
@@ -585,6 +589,10 @@ ul {
 @media (min-width: 1400px) {
     .produtos-grid {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Mais colunas em telas grandes */
+    }
+    
+    .sidebar {
+        display: block !important; /* Exibe a sidebar em telas grandes */
     }
 }
 
