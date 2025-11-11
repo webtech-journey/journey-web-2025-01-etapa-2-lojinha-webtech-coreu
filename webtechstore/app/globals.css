@@ -4,7 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-secondary-color: var(--secondary-color);
   --color-finish-button: var(--finish-button);
+  --color-bg-login: var(--bg-login);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -45,7 +47,10 @@
 }
 
 :root {
-
+  --secondary-color: oklch(44.6% 0.03 256.802);
+  --bg-login: #ffff;
+  --border-login: gray 200;
+  --border: gray 200;
   --secondary-bg: oklch(87.2% 0.01 258.338);
   --color-theme: oklch(25.7% 0.09 281.288);
   --theme-bg: oklch(97% 0.014 254.604);
@@ -90,6 +95,9 @@
 }
 
 .dark {
+  --secondary-color: oklch(70.7% 0.022 261.325);
+  --border-login: indigo 900;
+  --bg-login: indigo 950;
   --secondary-bg: oklch(21% 0.034 264.665);
   --color-theme: oklch(98.7% 0.026 102.212);
   --theme-bg: oklch(98.73% 0.02613 102.266 / 0.24);
