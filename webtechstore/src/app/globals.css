@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-yellow: var(--yellow);
+  --color-theme: var(--theme-color);
+  --color-theme-bg: var(--theme-bg);
   --color-secondary-color: var(--secondary-color);
   --color-finish-button: var(--finish-button);
   --color-bg-login: var(--bg-login);
@@ -51,7 +54,7 @@
   --border-login: gray 200;
   --border: gray 200;
   --secondary-bg: oklch(87.2% 0.01 258.338);
-  --color-theme: oklch(25.7% 0.09 281.288);
+  --theme-color: oklch(25.7% 0.09 281.288);
   --theme-bg: oklch(97% 0.014 254.604);
   --footer: oklch(25.7% 0.09 281.288);
   --title-bottom: oklch(28.3% 0.141 291.089);
@@ -94,12 +97,13 @@
 }
 
 .dark {
+   --background: #030712;
   --secondary-color: oklch(70.7% 0.022 261.325);
   --border-login: indigo 900;
   --bg-login: indigo 950;
   --secondary-bg: oklch(21% 0.034 264.665);
   --color-theme: oklch(98.7% 0.026 102.212);
-  --theme-bg: oklch(98.73% 0.02613 102.266 / 0.24);
+  --theme-bg: #332C13;
   --footer: oklch(25.7% 0.09 281.288);
   --primary-button: oklch(35.9% 0.144 278.697);
   --finish-button: oklch(62.7% 0.194 149.214);

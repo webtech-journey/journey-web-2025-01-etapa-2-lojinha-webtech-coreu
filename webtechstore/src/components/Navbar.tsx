@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full border-b border-border">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center mt-3">
           <img
             src={
@@ -95,7 +95,9 @@ export default function Navbar() {
             <User size={18} />
           </Link>
 
-          <ThemeToggle />
+        <div className="mx-1">
+            <ThemeToggle />
+        </div>
 
           <button
             onClick={toggleMenu}
@@ -110,7 +112,7 @@ export default function Navbar() {
       {/* Menu Mobile */}
       {isMenuOpen && (
         <div className="md:hidden border-t border-border bg-background">
-          <div className="px-4 py-2 space-y-1">
+          <div className="px-4 py-2 space-y-1 text-sm">
             <NavLink href="/" mobile>
               Home
             </NavLink>
