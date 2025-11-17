@@ -6,23 +6,23 @@ import { faLinkedin, faGithub, faInstagram, faDiscord, faYoutubeSquare } from '@
 export default function Footer() {
   return (
     <footer className="text-white py-12 w-full bg-[var(--footer-bg)]">
-      <div className="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-start px-6 sm:px-12 lg:px-20 xl:px-28 gap-8 md:gap-12">
-        <div className="flex-1 md:w-1/3 text-center md:text-left">
-          <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
-            <img src="/images/webtech-footer.png" alt="WebTech" className="h-6 w-6" />
-            <h2 className="text-xl font-semibold font-[var(--font-montserrat)]">Webtech Network</h2>
+      <div className="mx-auto max-w-6xl flex flex-col md:flex-row justify-between items-start px-6 sm:px-12 lg:px-20 xl:px-28 gap-8 md:gap-12">
+        <div className="flex-1 md:w-1/3 md:text-left">
+          <div className="flex items-center md:justify-start gap-2 mb-3">
+            <img src="/images/webtech-footer.png" alt="WebTech" className="h-5 w-5 object-contain" />
+            <h2 className="text-lg font-semibold font-[var(--font-montserrat)]">Webtech Network</h2>
           </div>
-          <p className="leading-relaxed font-medium text-sm">
+            <p className="leading-relaxed font-medium text-xs">
             A WebTech é um projeto de extensão da PUC Minas que tem como objetivo gerar espaço de trabalho para que alunos e professores criem juntos aplicações, ferramentas e conteúdo para interessados em criar soluções e produtos digitais.
-          </p>
+            </p>
         </div>
         
-        <div className="flex-1 md:w-1/3 text-center md:text-left w-full">
-          <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-            <MapPin size={24} weight="fill" />
-            <h3 className="text-xl font-semibold">Unidades</h3>
+        <div className="flex-1 md:w-1/3 md:text-left w-full">
+          <div className="flex items-center gap-2 mb-2">
+            <MapPin size={22} weight="fill" />
+            <h3 className="text-lg font-semibold">Unidades</h3>
           </div>
-          <div className="space-y-4 w-full flex flex-col items-center md:items-start">
+          <div className="space-y-4 w-full flex flex-col">
             <div className="w-full max-w-xs">
               <p className="font-semibold text-sm">Coreu</p>
               <p className="text-xs font-semibold text-[#D1D5DC]">
@@ -42,14 +42,14 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="flex-1 md:w-1/3 text-center md:text-left w-full">
-          <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+        <div className="flex-1 md:w-1/3 md:text-left w-full">
+          <div className="flex items-center  md:justify-start gap-2 mb-3">
             <Globe size={24} />
-            <h3 className="text-xl font-semibold">Acompanhe-nos!</h3>
+            <h3 className="text-lg font-semibold">Acompanhe-nos!</h3>
           </div>
           
-          <div className="w-full flex flex-col items-center md:items-start">
-            <div className="flex gap-3 justify-center md:justify-start">
+          <div className="w-full flex flex-col md:items-start">
+            <div className="flex gap-3 md:justify-start">
               <a href="https://www.linkedin.com/company/webtech-network/posts/?feedView=all" aria-label="LinkedIn" className="hover:opacity-80 transition-opacity">
                 <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
               </a>
