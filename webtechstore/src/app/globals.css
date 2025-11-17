@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --footer-bg: var(--footer);
   --color-yellow: var(--yellow);
   --color-theme: var(--theme-color);
   --color-theme-bg: var(--theme-bg);
