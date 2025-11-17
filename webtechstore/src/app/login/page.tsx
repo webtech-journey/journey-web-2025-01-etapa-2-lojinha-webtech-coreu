@@ -1,14 +1,35 @@
-export const metadata = {
-  title: "Login - Webtech Store",
-  description: "Página de login simples",
-};
+"use client";
+import Link from "next/link";
+import { useTheme } from "../../components/ThemeProvider";
+import { useEffect, useState } from "react";
 
 export default function LoginPage() {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
-    <main className="min-h-screen flex items-center justify-center px-4">
+    <main className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
       <section className="w-full max-w-md">
-        <div className="rounded-lg shadow-md p-6 bg-card text-card-foreground">
-          <h1 className="text-2xl font-semibold mb-4">Entrar</h1>
+        <div className="rounded-lg p-6 bg-login dark:bg-indigo-950 text-card-foreground border-2 dark:border-indigo-900">
+          <Link href="/" className="mb-8">
+            <img
+              src={
+                mounted && theme === "dark"
+                  ? "/images/Logo-dark.png"
+                  : "/images/Logo-light.png"
+              }
+              alt="Webtech Store"
+              className="object-cover w-40 items-center my-4 justify-center mx-auto sm:w-48 md:w-52"
+            />
+          </Link>
+          <p className="text-lg font-semibold mb-4">Entrar</p>
+          <p className="text-sm font-medium text-secondary-color mb-4">
+            Preencha suas informações abaixo para fazer login
+          </p>
 
           <form className="flex flex-col gap-3">
             <label className="flex flex-col text-sm">
@@ -16,7 +37,7 @@ export default function LoginPage() {
               <input
                 type="email"
                 placeholder="seu@exemplo.com"
-                className="px-3 py-2 rounded-md bg-popover text-popover-foreground border border-border"
+                className="px-3 py-2 rounded-md bg-popover text-popover-foreground border border-border dark:bg-indigo-950 "
               />
             </label>
 
@@ -25,20 +46,26 @@ export default function LoginPage() {
               <input
                 type="password"
                 placeholder="••••••••"
-                className="px-3 py-2 rounded-md bg-popover text-popover-foreground border border-border"
+                className="px-3 py-2 rounded-md bg-popover text-popover-foreground border border-border dark:bg-indigo-950 "
               />
             </label>
 
             <button
               type="submit"
-              className="mt-2 px-4 py-2 rounded-md bg-primary text-primary-foreground font-medium"
+              className="mt-2 px-4 py-2 rounded-md bg-indigo-900 text-white text-primary-foreground font-medium"
             >
               Entrar
             </button>
           </form>
 
-          <p className="text-sm mt-4 text-muted-foreground">
-            Não tem uma conta? Cadastre-se
+          <p className="text-sm mt-4 text-muted-foreground text-center">
+            Não tem uma conta?{" "}
+            <Link
+              href="/cadastro"
+              className="text-primary hover:underline font-medium"
+            >
+              Cadastre-se
+            </Link>
           </p>
         </div>
       </section>

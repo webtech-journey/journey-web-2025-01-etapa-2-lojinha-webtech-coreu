@@ -61,7 +61,7 @@
   --trash: oklch(57.7% 0.245 27.325);
   --primary-border: oklch(92.8% 0.006 264.531);
   --finish-button: oklch(62.7% 0.194 149.214);
-  --yellow: oklch(79.5% 0.184 86.047);
+  --yellow: #f0b100;
   --radius: 0.625rem;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
@@ -97,7 +97,7 @@
 }
 
 .dark {
-   --background: #030712;
+  --background: #030712;
   --secondary-color: oklch(70.7% 0.022 261.325);
   --border-login: indigo 900;
   --bg-login: indigo 950;

@@ -1,4 +1,6 @@
 import Navbar from "../components/Navbar";
+import Categorias from "../components/Categorias";
+import Perguntas from "../components/Perguntas";
 import ProductCard from "../components/ProductCard";
 
 const produtos = [
@@ -36,14 +38,14 @@ export default function Home() {
         <img
           src="/images/banner.png"
           alt="Webtech Store"
-          className="object-cover sm:max-w-4xl sm:flex-1 sm:mx-auto sm:mt-5 "
+          className="object-cover sm:max-w-2xl md:max-w-4xl sm:flex-1 sm:mx-auto sm:mt-5 "
         />
       <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col  py-12 px-8 sm:px-4">
         <div className="flex flex-col gap-6">
           <h1 className="text-xl sm:text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             <span className="inline-block">
               Produtos
-              <span className="block h-1 bg-indigo-800 w-1/2 rounded-lg" />
+              <span className="block h-1 bg-indigo-800 w-2/5 rounded-lg" />
             </span>
           </h1>
 
@@ -70,13 +72,44 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="mt-3 flex flex-col gap-6">
+        <div className="mt-3 flex flex-col gap-6 mb-3">
             <h1 className="text-xl sm:text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             <span className="inline-block">
               Categorias
-              <span className="block h-1 bg-indigo-800 w-1/2 rounded-lg" />
+              <span className="block h-1 bg-indigo-800 w-1/3 rounded-lg" />
             </span>
           </h1>
+
+            <section className="w-full">
+                <div className="flex  flex-wrap gap-2 ">
+                    <Categorias nome="Acessórios" />
+                    <Categorias nome="Adesivos" />
+                    <Categorias nome="Canecas" />
+                    <Categorias nome="Roupas" />
+                </div>
+            </section>
+        </div>
+        <div className="mt-3 flex flex-col  sm:flex-row gap-6">
+            <div>
+            <img src="/images/Webtech-all.png" className="object-contain w-xl sm:w-xl" alt="" />
+            <a target="_blank" href="https://webtech.network" className="bg-background text-center justify-center items-center text-yellow-500 font-semibold border-2 border-yellow-500 p-2 flex mt-2 drop-shadow-[4px_4px_0px_#eab308] dark:drop-shadow-[4px_4px_0px_#f0b100] hover:drop-shadow-[6px_6px_0px_#eab30866] dark:hover:drop-shadow-[6px_6px_0px_#f0b100] transition-all">Conheça a Webtech</a>
+            </div>
+          <div>
+            <h1 className="text-xl mb-3 sm:text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+              <span className="inline-block">
+                Informações Relevantes
+                <span className="block h-1 bg-indigo-800 w-1/6 rounded-lg" />
+              </span>
+            </h1>
+            <div className="flex flex-col gap-3 w-full">
+
+            <Perguntas pergunta="Qual é o prazo de entrega?" resposta="O prazo de entrega é de 5 a 7 dias úteis." />
+            <Perguntas pergunta="Quais são as formas de pagamento?" resposta="Aceitamos cartões de crédito, débito e boleto bancário." />
+            <Perguntas pergunta="Posso trocar um produto?" resposta="Sim, você pode solicitar a troca em até 30 dias após o recebimento." />
+            </div>
+
+          </div>
+        
         </div>
       </main>
     </div>
