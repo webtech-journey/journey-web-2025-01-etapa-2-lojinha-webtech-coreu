@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --footer-bg: var(--footer);
   --color-yellow: var(--yellow);
   --color-theme: var(--theme-color);
   --color-theme-bg: var(--theme-bg);
@@ -97,7 +98,7 @@
 }
 
 .dark {
-   --background: #030712;
+  --background: #030712;
   --secondary-color: oklch(70.7% 0.022 261.325);
   --border-login: indigo 900;
   --bg-login: indigo 950;

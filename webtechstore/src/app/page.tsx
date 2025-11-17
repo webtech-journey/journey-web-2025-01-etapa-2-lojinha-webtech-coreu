@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
+import Footer from "../components/Footer";
 
 const produtos = [
   {
@@ -79,6 +80,7 @@ export default function Home() {
           </h1>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
