@@ -50,19 +50,19 @@ export default function Footer() {
           
           <div className="w-full flex flex-col items-center md:items-start">
             <div className="flex gap-3 justify-center md:justify-start">
-              <a href="#" aria-label="LinkedIn" className="hover:opacity-80 transition-opacity">
+              <a href="https://www.linkedin.com/company/webtech-network/posts/?feedView=all" aria-label="LinkedIn" className="hover:opacity-80 transition-opacity">
                 <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
               </a>
-              <a href="#" aria-label="GitHub" className="hover:opacity-80 transition-opacity">
+              <a href="https://github.com/webtech-network" aria-label="GitHub" className="hover:opacity-80 transition-opacity">
                 <FontAwesomeIcon icon={faGithub} className="text-3xl" />
               </a>
-              <a href="#" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
+              <a href="https://www.instagram.com/webtech.network/" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
                 <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
               </a>
-              <a href="#" aria-label="YouTube" className="hover:opacity-80 transition-opacity">
+              <a href="https://www.youtube.com/channel/UCvcjBDrFKF_p8rNJSgjevIg" aria-label="YouTube" className="hover:opacity-80 transition-opacity">
                 <FontAwesomeIcon icon={faYoutubeSquare} className="text-3xl" />
               </a>
-              <a href="#" aria-label="Discord" className="hover:opacity-80 transition-opacity">
+              <a href="https://discord.com/invite/zee7DKZp8C" aria-label="Discord" className="hover:opacity-80 transition-opacity">
                 <FontAwesomeIcon icon={faDiscord} className="text-3xl" />
               </a>
             </div>
