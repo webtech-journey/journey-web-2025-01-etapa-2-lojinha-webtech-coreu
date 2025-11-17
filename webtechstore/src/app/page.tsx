@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Categorias from "../components/Categorias";
 import Perguntas from "../components/Perguntas";
 import ProductCard from "../components/ProductCard";
+import Footer from "../components/Footer";
 
 const produtos = [
   {
@@ -112,6 +113,7 @@ export default function Home() {
         
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
