@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import ThemeProvider from "../components/ThemeProvider";
+import { CarrinhoProvider } from "../components/CarrinhoContext";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -28,7 +29,9 @@ export default async function RootLayout({
       <head></head>
       <body className={`${montserrat.variable} font-montserrat antialiased`}>
         <ThemeProvider defaultTheme={theme}>
-          <div className="min-h-screen">{children}</div>
+          <CarrinhoProvider>
+            <div className="min-h-screen">{children}</div>
+          </CarrinhoProvider>
         </ThemeProvider>
       </body>
     </html>

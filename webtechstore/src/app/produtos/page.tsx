@@ -120,8 +120,8 @@ export default function ProdutosPage() {
     <div className="flex min-h-screen flex-col bg-background font-sans">
       <Navbar />
 
-      <main className="mx-auto flex w-full max-w-7xl flex-1 py-4 px-4 sm:py-8 sm:px-6">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 w-full">
+      <main className="mx-auto flex w-full max-w-7xl flex-1 py-6 px-8 sm:py-8 sm:px-6">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 w-full">
           {/* Sidebar com filtros */}
           <aside className="w-full lg:w-64 lg:shrink-0">
             <div className="lg:sticky lg:top-8">
@@ -147,7 +147,7 @@ export default function ProdutosPage() {
               </div>
 
               {/* Filtro por Categorias */}
-              <div className="mb-4 lg:mb-6">
+              <div className="mb-4 lg:mb-2">
                 <h3 className="font-medium text-foreground mb-3">Categorias</h3>
                 <div className="grid grid-cols-2 lg:grid-cols-1 gap-2 lg:space-y-2 lg:block">
                   {categorias.map((categoria) => (
@@ -265,9 +265,11 @@ export default function ProdutosPage() {
                 {produtosFiltrados.map((produto) => (
                   <ProductCard
                     key={produto.id}
+                    id={produto.id}
                     nome={produto.nome}
                     preco={produto.preco}
                     imagem={produto.imagem}
+                    categoria={produto.categoria}
                   />
                 ))}
               </div>

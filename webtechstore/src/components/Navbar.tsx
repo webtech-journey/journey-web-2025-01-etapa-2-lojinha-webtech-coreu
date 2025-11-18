@@ -6,11 +6,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "./ThemeProvider";
+import CarrinhoSidebar from "./CarrinhoSidebar";
+import { useCarrinho } from "./CarrinhoContext";
 
 export default function Navbar() {
   const pathname = usePathname();
   const { theme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCarrinhoOpen, setIsCarrinhoOpen] = useState(false);
+  const { getTotalItens } = useCarrinho();
+
+  const totalItens = getTotalItens();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -81,12 +87,17 @@ export default function Navbar() {
             <Heart size={18} />
           </Link>
 
-          <Link
-            href="/carrinho"
-            className="hidden md:flex items-center gap-2 px-3 py-1 rounded-md hover:bg-background/5"
+          <button
+            onClick={() => setIsCarrinhoOpen(true)}
+            className="hidden md:flex items-center gap-2 px-3 py-1 rounded-md hover:bg-background/5 relative"
           >
             <ShoppingCart size={18} />
-          </Link>
+            {totalItens > 0 && (
+              <span className="absolute -top-1 -right-1 bg-yellow-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                {totalItens > 99 ? "99+" : totalItens}
+              </span>
+            )}
+          </button>
 
           <Link
             href="/login"
@@ -95,9 +106,9 @@ export default function Navbar() {
             <User size={18} />
           </Link>
 
-        <div className="mx-1">
+          <div className="mx-1">
             <ThemeToggle />
-        </div>
+          </div>
 
           <button
             onClick={toggleMenu}
@@ -135,14 +146,23 @@ export default function Navbar() {
                 <span className="text-xs">Favoritos</span>
               </Link>
 
-              <Link
-                href="/carrinho"
-                onClick={() => setIsMenuOpen(false)}
-                className="flex flex-col items-center gap-1 hover:text-foreground transition-colors"
+              <button
+                onClick={() => {
+                  setIsCarrinhoOpen(true);
+                  setIsMenuOpen(false);
+                }}
+                className="flex flex-col items-center gap-1 hover:text-foreground transition-colors relative"
               >
-                <ShoppingCart size={20} />
+                <div className="relative">
+                  <ShoppingCart size={20} />
+                  {totalItens > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-yellow-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                      {totalItens > 99 ? "99+" : totalItens}
+                    </span>
+                  )}
+                </div>
                 <span className="text-xs">Carrinho</span>
-              </Link>
+              </button>
 
               <Link
                 href="/login"
@@ -156,6 +176,12 @@ export default function Navbar() {
           </div>
         </div>
       )}
+
+      {/* Carrinho Sidebar */}
+      <CarrinhoSidebar
+        isOpen={isCarrinhoOpen}
+        onClose={() => setIsCarrinhoOpen(false)}
+      />
     </nav>
   );
 }
