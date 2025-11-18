@@ -43,12 +43,12 @@ export default function Home() {
         />
       <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col  py-12 px-8 sm:px-4">
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl sm:text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+            <h1 className="text-xl text-center sm:text-2xl md:text-start font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             <span className="inline-block">
               Produtos
-              <span className="block h-1 bg-indigo-800 w-2/5 rounded-lg" />
+              <span className="block h-1 bg-indigo-800 w-2/5 mx-auto md:mx-0 rounded-lg" />
             </span>
-          </h1>
+            </h1>
 
           <section className="w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -73,13 +73,13 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="mt-3 flex flex-col gap-6 mb-3">
-            <h1 className="text-xl sm:text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+        <div className="mt-4 flex flex-col gap-6 mb-4">
+             <h1 className="text-xl text-center mt-2 sm:text-2xl md:text-start font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             <span className="inline-block">
               Categorias
-              <span className="block h-1 bg-indigo-800 w-1/3 rounded-lg" />
+              <span className="block h-1 bg-indigo-800 w-2/5 mx-auto md:mx-0 rounded-lg" />
             </span>
-          </h1>
+            </h1>
 
             <section className="w-full">
                 <div className="flex  flex-wrap gap-2 ">
@@ -96,11 +96,11 @@ export default function Home() {
             <a target="_blank" href="https://webtech.network" className="bg-background text-center justify-center items-center text-yellow-500 font-semibold border-2 border-yellow-500 p-2 flex mt-2 drop-shadow-[4px_4px_0px_#eab308] dark:drop-shadow-[4px_4px_0px_#f0b100] hover:drop-shadow-[6px_6px_0px_#eab30866] dark:hover:drop-shadow-[6px_6px_0px_#f0b100] transition-all">Conheça a Webtech</a>
             </div>
           <div>
-            <h1 className="text-xl mb-3 sm:text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+             <h1 className="text-xl text-center mt-2 sm:text-2xl md:text-start font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
               <span className="inline-block">
                 Informações Relevantes
-                <span className="block h-1 bg-indigo-800 w-1/6 rounded-lg" />
-              </span>
+                <span className="block h-1 bg-indigo-800 w-1/6 mb-4 mx-auto md:mx-0 rounded-lg" />
+            </span>
             </h1>
             <div className="flex flex-col gap-3 w-full">
 

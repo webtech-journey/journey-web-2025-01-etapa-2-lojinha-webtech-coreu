@@ -9,7 +9,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ nome, preco, imagem }: ProductCardProps) {
   return (
-    <div className="p-3 cursor-pointer sm:p-1 ">
+    <div className="p-6 cursor-pointer sm:p-1 ">
       <div className="aspect-square mb-2 overflow-hidden">
         <img
           src={imagem}
@@ -20,8 +20,8 @@ export default function ProductCard({ nome, preco, imagem }: ProductCardProps) {
 
     <div className="relative">
         <div className="space-y-2 pr-12">
-            <h3 className="font-medium text-foreground truncate">{nome}</h3>
-            <span className="text-sm font-semibold text-primary">R$ {preco}</span>
+            <h3 className="font-medium sm:text-base text-foreground truncate">{nome}</h3>
+            <span className="text-xs sm:text-sm font-semibold text-primary">R$ {preco}</span>
         </div>
 
         <button

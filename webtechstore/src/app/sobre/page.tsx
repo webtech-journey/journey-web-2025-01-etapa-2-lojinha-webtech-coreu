@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export const metadata = {
   title: "Sobre Nós - Webtech Store",
@@ -21,6 +22,7 @@ export default function SobrePage() {
           </p>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
