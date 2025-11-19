@@ -82,13 +82,13 @@ export default function SobrePage() {
                   </p>
                 </div>
               </div>
-              <div className="bg-gray-50 rounded-xl p-8">
+              <div className="bg-gray-50 dark:border dark:border-gray-700 dark:bg-background rounded-xl p-8">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="bg-indigo-100 dark:bg-indigo-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
                       <ShoppingCart
                         size={32}
-                        className="text-indigo-600 dark:text-indigo-400"
+                        className="text-indigo-600 dark:text-white dark:text-indigo-400"
                       />
                     </div>
                     <h3 className="font-semibold text-foreground">
@@ -102,7 +102,7 @@ export default function SobrePage() {
                     <div className="bg-indigo-100 dark:bg-indigo-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
                       <Users
                         size={32}
-                        className="text-indigo-600 dark:text-indigo-400"
+                        className="text-indigo-600 dark:text-white dark:text-indigo-400"
                       />
                     </div>
                     <h3 className="font-semibold text-foreground">
@@ -116,7 +116,7 @@ export default function SobrePage() {
                     <div className="bg-indigo-100 dark:bg-indigo-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
                       <Trophy
                         size={32}
-                        className="text-indigo-600 dark:text-indigo-400"
+                        className="text-indigo-600 dark:text-white dark:text-indigo-400"
                       />
                     </div>
                     <h3 className="font-semibold text-foreground">Qualidade</h3>
@@ -128,7 +128,7 @@ export default function SobrePage() {
                     <div className="bg-indigo-100 dark:bg-indigo-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
                       <Heart
                         size={32}
-                        className="text-indigo-600 dark:text-indigo-400"
+                        className="text-indigo-600 dark:text-white dark:text-indigo-400"
                       />
                     </div>
                     <h3 className="font-semibold text-foreground">Paixão</h3>
@@ -243,7 +243,7 @@ export default function SobrePage() {
               </div>
 
               {/* Formulário */}
-              <div className="bg-card border border-border rounded-xl p-8 text-sm">
+              <div className="bg-background dark:bg-gray-900 border border-border rounded-xl p-8 text-sm">
                 <h3 className="text-2xl font-bold text-foreground mb-6">
                   Envie sua Mensagem
                 </h3>
@@ -260,7 +260,7 @@ export default function SobrePage() {
                         onChange={handleInputChange}
                         required
                         placeholder="Seu nome completo"
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 rounded-lg border border-border dark:bg-gray-900 text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
                       />
                     </div>
                     <div>
@@ -274,7 +274,7 @@ export default function SobrePage() {
                         onChange={handleInputChange}
                         required
                         placeholder="seu@email.com"
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 rounded-lg border border-border dark:bg-gray-900 text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
                       />
                     </div>
                   </div>
@@ -290,7 +290,7 @@ export default function SobrePage() {
                       onChange={handleInputChange}
                       required
                       placeholder="Sobre o que você gostaria de falar?"
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 rounded-lg border border-border dark:bg-gray-900 text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
                     />
                   </div>
 
@@ -305,7 +305,7 @@ export default function SobrePage() {
                       required
                       rows={5}
                       placeholder="Conte-nos mais detalhes sobre sua dúvida ou sugestão..."
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-lg border border-border dark:bg-gray-900 text-foreground focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors resize-none"
                     />
                   </div>
 

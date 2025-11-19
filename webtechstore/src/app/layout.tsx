@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import "./globals.css";
 import ThemeProvider from "../components/ThemeProvider";
 import { CarrinhoProvider } from "../components/CarrinhoContext";
+import BackToTop from "../components/BackToTop";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -31,6 +32,7 @@ export default async function RootLayout({
         <ThemeProvider defaultTheme={theme}>
           <CarrinhoProvider>
             <div className="min-h-screen">{children}</div>
+            <BackToTop />
           </CarrinhoProvider>
         </ThemeProvider>
       </body>
