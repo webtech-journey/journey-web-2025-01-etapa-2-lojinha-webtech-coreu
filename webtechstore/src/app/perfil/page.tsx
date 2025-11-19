@@ -78,7 +78,7 @@ export default function PerfilPage() {
       <Navbar />
 
       {/* Section Indigo de Fundo */}
-      <section className="w-full bg-indigo-950 h-32 sm:h-40"></section>
+      <section className="w-full  bg-gray-100 dark:bg-gray-900 h-32 sm:h-40"></section>
 
       <main className="flex-1 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
@@ -130,7 +130,7 @@ export default function PerfilPage() {
           </div>
 
           {/* Informações do Perfil */}
-          <div className="grid grid-cols-1 border border-border rounded-lg overflow-hidden">
+          <div className="grid grid-cols-1 border border-border rounded-lg dark:bg-gray-900 overflow-hidden">
             {/* Dados Pessoais */}
             <div className="p-6">
               <h2 className="text-xl font-semibold text-foreground mb-6">
@@ -143,7 +143,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       Nome completo
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.nomeCompleto}
                     </div>
                   </div>
@@ -152,7 +152,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       Data de Nascimento
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.dataNascimento}
                     </div>
                   </div>
@@ -163,7 +163,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       Telefone
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.telefone}
                     </div>
                   </div>
@@ -172,7 +172,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       E-mail
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.email}
                     </div>
                   </div>
@@ -192,7 +192,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       CEP
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.cep}
                     </div>
                   </div>
@@ -201,7 +201,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       Cidade
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.cidade}
                     </div>
                   </div>
@@ -211,7 +211,7 @@ export default function PerfilPage() {
                   <label className="block text-sm font-medium text-foreground mb-1">
                     Endereço
                   </label>
-                  <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                  <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                     {perfil.endereco}
                   </div>
                 </div>
@@ -221,7 +221,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       Número
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.numero}
                     </div>
                   </div>
@@ -230,7 +230,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       Bairro
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.bairro}
                     </div>
                   </div>
@@ -239,7 +239,7 @@ export default function PerfilPage() {
                     <label className="block text-sm font-medium text-foreground mb-1">
                       Complemento
                     </label>
-                    <div className="p-3 bg-background border border-border rounded-md text-sm text-foreground">
+                    <div className="p-3 dark:bg-gray-900 border border-border rounded-md text-sm text-foreground">
                       {perfil.complemento}
                     </div>
                   </div>
