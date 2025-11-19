@@ -58,7 +58,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full border-b border-border">
+    <nav
+      className="w-full border-b border-border"
+      style={{ fontFamily: "var(--font-montserrat)" }}
+    >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center mt-3">
           <img
